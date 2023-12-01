@@ -42,7 +42,7 @@ const Contact = () => {
 
     try {
       setSubmitting(true); // Set submitting state to true
-      const response = await axios.post('http://localhost:5000/contact', formData, {
+      const response = await axios.post('https://lingomastersbackend.onrender.com/contact', formData, {
         headers: {
           'Content-Type': 'application/json',
         },
